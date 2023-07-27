@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: application-operator
 repo: github.com/twy2016/application-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: tangwanyan.com
+  group: apps
+  kind: Application
+  path: github.com/twy2016/application-operator/api/v1
+  version: v1
 version: "3"
